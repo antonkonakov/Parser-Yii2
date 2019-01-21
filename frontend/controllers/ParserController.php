@@ -61,12 +61,7 @@ class ParserController extends Controller
         }
 
 
-        $dataProvider = new ActiveDataProvider([
-            'query' => Parser::find()->orderBy('id DESC'),
-        ]);
-
-        return $this->render('index', [
-                    'dataProvider' => $dataProvider, 'model' => $model, 'urlList' => $urlList,
+        return $this->render('index', ['model' => $model, 'urlList' => $urlList,
         ]);
     }
 

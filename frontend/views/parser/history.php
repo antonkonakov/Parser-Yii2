@@ -5,11 +5,8 @@ use yii\grid\GridView;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'История запросов';
-//$this->params['breadcrumbs'][] = $this->title;
-
 $this->params['breadcrumbs'][] = ['label' => 'Парсинг', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 $this->params['breadcrumbs'][] = ['label' => 'Настройка прокси', 'url' => ['proxy']];
